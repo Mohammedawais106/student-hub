@@ -83,15 +83,6 @@ export const deleteStudentCont = async (req, res) => {
 
 
 
-// export const getAllStudents = async (req, res) => {
-//   try {
-//     const students = await getAllStudentsService();
-//     res.json(students);
-//   } catch (err) {
-//     res.status(500).json({ error: err.message });
-//   }
-// };
-
 export const getStudentById = async (req, res) => {
   try {
     const student = await getStudentByIdService(req.params.id);

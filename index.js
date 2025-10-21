@@ -17,7 +17,13 @@ app.use(cors());
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
+// below for test on vercel
+app.get("/hi", (req, res) => {
+  res.send("🎉 Hi! Your code is running successfully on Render server!");
+});
 // 5. Routes
+
+
 app.use('/api/students', studentRoutes);
 
 // 6. Set PORT

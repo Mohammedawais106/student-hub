@@ -5,7 +5,7 @@ import {
   getStudentCont,
   updateStudentCont,
   deleteStudentCont
-} from '../controllers/student_controller.js'; // match casing and paths
+} from '../Controllers/student_controller.js'; // match casing and paths
 
 const router = express.Router();
 
@@ -16,9 +16,6 @@ router.put('/update/:id', updateStudentCont);
 router.delete('/delete/:id', deleteStudentCont);
 
 
-// router.get('/', getAllStudents);
-// router.get('/:id', getStudentById);
-// router.put('/:id', updateStudent);
 
 
 export default router;
